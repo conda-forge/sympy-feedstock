@@ -14,6 +14,18 @@ full-featured computer algebra system (CAS) while keeping the code as
 simple as possible in order to be comprehensible and easily extensible.
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/sympy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/sympy-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/sympy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/sympy-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/sympy-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/sympy-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sympy/badges/version.svg)](https://anaconda.org/conda-forge/sympy)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sympy/badges/downloads.svg)](https://anaconda.org/conda-forge/sympy)
+
 Installing sympy
 ================
 
@@ -34,7 +46,6 @@ It is possible to list all of the versions of `sympy` available on your platform
 ```
 conda search sympy --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -70,18 +81,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/sympy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/sympy-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/sympy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/sympy-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/sympy-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/sympy-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sympy/badges/version.svg)](https://anaconda.org/conda-forge/sympy)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sympy/badges/downloads.svg)](https://anaconda.org/conda-forge/sympy)
 
 
 Updating sympy-feedstock
