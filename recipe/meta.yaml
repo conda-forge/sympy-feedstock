@@ -22,7 +22,7 @@ requirements:
     - fastcache
     - mpmath >=0.19
     - python
-    - gmpy2           # [(not win) or py35]
+    - gmpy2           # [not win]
 
 test:
   commands:
