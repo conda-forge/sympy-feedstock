@@ -10,7 +10,7 @@ source:
   md5: e1b7a2b14066fc99c1cf22cedba56be8
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install
 
 requirements:
@@ -22,6 +22,7 @@ requirements:
     - fastcache
     - mpmath >=0.19
     - python
+    - gmpy2 >=2.0.8   # [not win]
 
 test:
   commands:
