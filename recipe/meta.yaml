@@ -7,10 +7,12 @@ package:
 source:
   fn: sympy-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/s/sympy/sympy-{{ version }}.tar.gz
-  md5: c410a9c2346878716d16ec873d72e72a
+  sha256: ac5b57691bc43919dcc21167660a57cc51797c28a4301a6144eff07b751216a4
+  patches:
+  - backport_pr13276.patch
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install
 
 requirements:
@@ -48,3 +50,4 @@ extra:
     - asmeurer
     - msarahan
     - scopatz
+    - saraedum
