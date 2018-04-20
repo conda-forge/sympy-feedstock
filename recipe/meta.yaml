@@ -9,7 +9,7 @@ source:
   url: https://pypi.io/packages/source/s/sympy/sympy-{{ version }}.tar.gz
   sha256: ac5b57691bc43919dcc21167660a57cc51797c28a4301a6144eff07b751216a4
   patches:
-  - 13276.patch
+  - backport_pr13276.patch
 
 build:
   number: 1
