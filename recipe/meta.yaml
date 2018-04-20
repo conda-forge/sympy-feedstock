@@ -8,9 +8,11 @@ source:
   fn: sympy-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/s/sympy/sympy-{{ version }}.tar.gz
   md5: c410a9c2346878716d16ec873d72e72a
+  patches:
+  - patches/13276.patch
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install
 
 requirements:
@@ -48,3 +50,4 @@ extra:
     - asmeurer
     - msarahan
     - scopatz
+    - saraedum
