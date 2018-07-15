@@ -26,7 +26,7 @@ requirements:
 
 test:
   commands:
-    - isympy -help
+    - isympy --help
   imports:
     - sympy
 
