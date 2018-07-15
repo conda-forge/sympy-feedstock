@@ -17,14 +17,16 @@ simple as possible in order to be comprehensible and easily extensible.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/sympy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/sympy-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/sympy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/sympy-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/sympy-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/sympy-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/sympy-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/sympy-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/sympy-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/sympy-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/sympy-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/sympy-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sympy/badges/version.svg)](https://anaconda.org/conda-forge/sympy)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sympy/badges/downloads.svg)](https://anaconda.org/conda-forge/sympy)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-sympy-green.svg)](https://anaconda.org/conda-forge/sympy) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sympy.svg)](https://anaconda.org/conda-forge/sympy) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sympy.svg)](https://anaconda.org/conda-forge/sympy) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sympy.svg)](https://anaconda.org/conda-forge/sympy) |
 
 Installing sympy
 ================
@@ -69,6 +71,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
