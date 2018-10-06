@@ -5,16 +5,15 @@ package:
   version: {{ version }}
 
 source:
-  fn: sympy-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/s/sympy/sympy-{{ version }}.tar.gz
-  md5: 11e18423f52e248108a3bd4307185bc1
+  sha256: e1319b556207a3758a0efebae14e5e52c648fc1db8975953b05fff12b6871b54
 
 build:
   number: 0
-  script: python setup.py install
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-  build:
+  host:
     - fastcache
     - mpmath
     - python
@@ -32,7 +31,7 @@ test:
 
 about:
   home: http://sympy.org
-  license: 3-clause BSD
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: Python library for symbolic mathematics
