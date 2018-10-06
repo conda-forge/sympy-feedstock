@@ -20,6 +20,7 @@ requirements:
     - python
   run:
     - fastcache
+    - setuptools
     - mpmath >=0.19
     - python
     - gmpy2 >=2.0.8   # [not win]
