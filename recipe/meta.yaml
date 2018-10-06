@@ -16,6 +16,7 @@ requirements:
   host:
     - fastcache
     - mpmath
+    - pip
     - python
   run:
     - fastcache
