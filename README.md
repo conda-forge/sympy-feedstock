@@ -3,7 +3,7 @@ About sympy
 
 Home: http://sympy.org
 
-Package license: 3-clause BSD
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
