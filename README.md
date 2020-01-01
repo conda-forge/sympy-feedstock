@@ -21,8 +21,8 @@ Current build status
 <table><tr>
     <td>Travis</td>
     <td>
-      <a href="https://travis-ci.org/conda-forge/sympy-feedstock">
-        <img alt="macOS" src="https://img.shields.io/travis/conda-forge/sympy-feedstock/master.svg?label=macOS">
+      <a href="https://travis-ci.com/conda-forge/sympy-feedstock">
+        <img alt="macOS" src="https://img.shields.io/travis/com/conda-forge/sympy-feedstock/master.svg?label=macOS">
       </a>
     </td>
   </tr><tr>
