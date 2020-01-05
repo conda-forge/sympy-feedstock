@@ -1,4 +1,4 @@
-{% set version = "1.5" %}
+{% set version = "1.5.1" %}
 
 package:
   name: sympy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/sympy/sympy-{{ version }}.tar.gz
-  sha256: 31567dc010bff0967ef7a87210acf3f938c6ab24481581fc143536fb103e9ce8
+  sha256: d77901d748287d15281f5ffe5b0fef62dd38f357c2b827c44ff07f35695f4e7e
 
 build:
   number: 0
