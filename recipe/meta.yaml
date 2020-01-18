@@ -26,7 +26,7 @@ requirements:
     - python
     - gmpy2 >=2.0.8   # [not win]
   run_constrained:
-    - antlr-python-runtime >=4.7,<4.8
+    - antlr-python-runtime >=4.7,<4.8  # [not aarch64 and not ppc64le]
 
 test:
   requires:
