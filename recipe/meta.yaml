@@ -29,8 +29,6 @@ requirements:
     - antlr-python-runtime >=4.7,<4.8
 
 test:
-  requires:
-    - antlr-python-runtime
   commands:
     - isympy --help
   imports:
