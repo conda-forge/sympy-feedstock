@@ -1,7 +1,7 @@
 About sympy
 ===========
 
-Home: http://sympy.org
+Home: https://sympy.org
 
 Package license: BSD-3-Clause
 
