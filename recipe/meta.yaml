@@ -9,22 +9,22 @@ source:
   sha256: d77901d748287d15281f5ffe5b0fef62dd38f357c2b827c44ff07f35695f4e7e
 
 build:
-  number: 1
+  number: 2
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   entry_points:
     - isympy = isympy:main
 
 requirements:
   host:
-    - fastcache
+    - fastcache       # [python_impl == "cpython"]
     - mpmath
     - pip
     - python
   run:
-    - fastcache
+    - fastcache       # [python_impl == "cpython"]
     - mpmath >=0.19
     - python
-    - gmpy2 >=2.0.8   # [not win]
+    - gmpy2 >=2.0.8   # [python_impl == "cpython" and not win]
   run_constrained:
     - antlr-python-runtime >=4.7,<4.8
 
