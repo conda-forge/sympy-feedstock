@@ -16,15 +16,15 @@ build:
 
 requirements:
   host:
-    - fastcache
+    - fastcache       # [python_impl == "cpython"]
     - mpmath
     - pip
     - python
   run:
-    - fastcache
+    - fastcache       # [python_impl == "cpython"]
     - mpmath >=0.19
     - python
-    - gmpy2 >=2.0.8   # [not win]
+    - gmpy2 >=2.0.8   # [python_impl == "cpython" and not win]
   run_constrained:
     - antlr-python-runtime >=4.7,<4.8
 
