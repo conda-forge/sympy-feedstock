@@ -15,6 +15,9 @@ build:
     - isympy = isympy:main
 
 requirements:
+  build:
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - fastcache       # [python_impl == "cpython"]
     - mpmath
