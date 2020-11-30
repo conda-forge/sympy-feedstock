@@ -332,6 +332,7 @@ Feedstock Maintainers
 =====================
 
 * [@asmeurer](https://github.com/asmeurer/)
+* [@isuruf](https://github.com/isuruf/)
 * [@msarahan](https://github.com/msarahan/)
 * [@scopatz](https://github.com/scopatz/)
 
