@@ -9,7 +9,7 @@ source:
   sha256: 9104004669cda847f38cfd8cd16dd174952c537349dbae740fea5331d2b3a51b
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
     - isympy = isympy:main
@@ -19,12 +19,10 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
-    - fastcache       # [python_impl == "cpython"]
     - mpmath
     - pip
     - python
   run:
-    - fastcache       # [python_impl == "cpython"]
     - mpmath >=0.19
     - python
     - gmpy2 >=2.0.8   # [python_impl == "cpython" and not win]
