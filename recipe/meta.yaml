@@ -1,4 +1,4 @@
-{% set version = "1.7" %}
+{% set version = "1.7.1" %}
 
 package:
   name: sympy
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/sympy/sympy-{{ version }}.tar.gz
-  sha256: 9104004669cda847f38cfd8cd16dd174952c537349dbae740fea5331d2b3a51b
+  sha256: a3de9261e97535b83bb8607b0da2c7d03126650fafea2b2789657b229c246b2e
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
     - isympy = isympy:main
