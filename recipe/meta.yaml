@@ -9,7 +9,7 @@ source:
   sha256: c7a880e229df96759f955d4f3970d4cabce79f60f5b18830c08b90ce77cd5fdc
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
     - isympy = isympy:main
