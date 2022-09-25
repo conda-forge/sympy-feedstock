@@ -1,4 +1,4 @@
-{% set version = "1.10.1" %}
+{% set version = "1.11.1" %}
 
 package:
   name: sympy
@@ -6,13 +6,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/sympy/sympy-{{ version }}.tar.gz
-  sha256: 5939eeffdf9e152172601463626c022a2c27e75cf6278de8d401d50c9d58787b
+  sha256: e32380dce63cb7c0108ed525570092fd45168bdae2faa17e528221ef72e88658
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
     - isympy = isympy:main
+  skip: True  # [py<38]
 
 requirements:
   build:
