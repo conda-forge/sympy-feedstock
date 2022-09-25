@@ -16,15 +16,15 @@ build:
 
 requirements:
   build:
-    - python                                 # [build_platform != target_platform]
+    - python >=3.8                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - mpmath
     - pip
-    - python
+    - python >=3.8
   run:
     - mpmath >=0.19
-    - python
+    - python >=3.8
     - gmpy2 >=2.0.8   # [python_impl == "cpython" and not win]
   run_constrained:
     - antlr-python-runtime >=4.7,<4.8
