@@ -9,7 +9,7 @@ source:
   sha256: e32380dce63cb7c0108ed525570092fd45168bdae2faa17e528221ef72e88658
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
     - isympy = isympy:main
@@ -28,7 +28,7 @@ requirements:
     - python
     - gmpy2 >=2.0.8   # [python_impl == "cpython" and not win]
   run_constrained:
-    - antlr-python-runtime >=4.7,<4.8
+    - antlr-python-runtime >=4.10,<4.11
 
 test:
   commands:
