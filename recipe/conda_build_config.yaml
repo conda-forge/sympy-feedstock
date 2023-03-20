@@ -1,0 +1,3 @@
+with_gmpy:
+  - True
+  - False
