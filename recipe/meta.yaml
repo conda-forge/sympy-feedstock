@@ -1,4 +1,4 @@
-{% set version = "1.12" %}
+{% set version = "1.12.1" %}
 {% set build_num = 3 %}
 
 {% if with_gmpy is not defined %}
@@ -15,7 +15,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/sympy/sympy-{{ version }}.tar.gz
-  sha256: ebf595c8dac3e0fdc4152c51878b498396ec7f30e7a914d6071e674d49420fb8
+  sha256: 2877b03f998cd8c08f07cd0de5b767119cd3ef40d09f41c30d722f6686b0fb88
 
 build:
   number: {{ build_num }}
