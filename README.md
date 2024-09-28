@@ -155,5 +155,6 @@ Feedstock Maintainers
 * [@asmeurer](https://github.com/asmeurer/)
 * [@isuruf](https://github.com/isuruf/)
 * [@msarahan](https://github.com/msarahan/)
+* [@oscarbenjamin](https://github.com/oscarbenjamin/)
 * [@scopatz](https://github.com/scopatz/)
 
