@@ -31,6 +31,7 @@ requirements:
   host:
     - mpmath
     - pip
+    - setuptools
     - python >=3.8
   run:
     - mpmath >=0.19
