@@ -1,5 +1,5 @@
 {% set version = "1.13.3" %}
-{% set build_num = 3 %}
+{% set build_num = 4 %}
 
 {% if with_gmpy is not defined %}
 {% set with_gmpy = True %}
@@ -37,7 +37,7 @@ requirements:
     - python >=3.8
     - gmpy2 >=2.0.8        # [with_gmpy]
     - __unix               # [with_gmpy]
-    - python * *_cpython   # [with_gmpy]
+    - cpython              # [with_gmpy]
 
 test:
   commands:
