@@ -14,7 +14,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/s/sympy/sympy-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/s/sympy/sympy-{{ version }}.tar.gz
   sha256: b27fd2c6530e0ab39e275fc9b683895367e51d5da91baa8d3d64db2565fec4d9
 
 build:
@@ -32,15 +32,17 @@ requirements:
     - mpmath
     - pip
     - setuptools
-    - python >=3.8
+    - python {{ python_min }}
   run:
     - mpmath >=0.19
-    - python >=3.8
+    - python >={{ python_min }}
     - gmpy2 >=2.0.8        # [with_gmpy]
     - __unix               # [with_gmpy]
     - cpython              # [with_gmpy]
 
 test:
+  requires:
+    - python {{ python_min }}
   commands:
     - isympy --help
   imports:
