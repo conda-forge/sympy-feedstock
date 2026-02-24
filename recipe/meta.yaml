@@ -45,6 +45,7 @@ test:
     - python {{ python_min }}
   commands:
     - isympy --help
+    - pip check
   imports:
     - sympy
 
