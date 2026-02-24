@@ -1,5 +1,5 @@
 {% set version = "1.14.0" %}
-{% set build_num = 5 %}
+{% set build_num = 6 %}
 
 {% if with_gmpy is not defined %}
 {% set with_gmpy = True %}
@@ -16,6 +16,8 @@ package:
 source:
   url: https://pypi.org/packages/source/s/sympy/sympy-{{ version }}.tar.gz
   sha256: d3d3fe8df1e5a0b42f0e7bdf50541697dbe7d23746e894990c030e2b05e72517
+  patches:
+    - patches/mpmath-pin.patch
 
 build:
   number: {{ build_num }}
@@ -34,7 +36,7 @@ requirements:
     - setuptools
     - python {{ python_min }}
   run:
-    - mpmath >=0.19
+    - mpmath >=1.1.0,<1.5
     - python >={{ python_min }}
     - gmpy2 >=2.0.8        # [with_gmpy]
     - __unix               # [with_gmpy]
@@ -43,8 +45,10 @@ requirements:
 test:
   requires:
     - python {{ python_min }}
+    - pip
   commands:
     - isympy --help
+    - pip check
   imports:
     - sympy
 
